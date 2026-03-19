@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>AV Bathrooms & Kitchens | Expert Fitters in London</title>
+    <meta name="description" content="Professional bathroom and kitchen fitters in London and nationwide. Expert installation, design, and supply services for modern and traditional styles." />
+    <meta name="keywords" content="bathroom fitters, kitchen fitters, bathroom installation, kitchen installation, London, nationwide" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (() => {
+        const analyticsEndpoint = "%VITE_ANALYTICS_ENDPOINT%";
+        const analyticsWebsiteId = "%VITE_ANALYTICS_WEBSITE_ID%";
+        const isResolved = value => value && !value.includes("%VITE_");
+
+        if (!isResolved(analyticsEndpoint) || !isResolved(analyticsWebsiteId)) {
+          return;
+        }
+
+        const script = document.createElement("script");
+        script.defer = true;
+        script.src = `${analyticsEndpoint}/umami`;
+        script.setAttribute("data-website-id", analyticsWebsiteId);
+        document.body.appendChild(script);
+      })();
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "frontend-av-runner",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ../av-bathrooms-inspired-main run dev",
+    "build": "npm --prefix ../av-bathrooms-inspired-main run build",
+    "start": "npm --prefix ../av-bathrooms-inspired-main run start",
+    "test": "npm --prefix ../av-bathrooms-inspired-main run test"
+  }
+}
